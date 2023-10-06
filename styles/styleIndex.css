@@ -31,13 +31,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 2px 0px 0px;
-    width: 35px;
-    height: 35px;
+    margin: 2px 4px 0px 0px;
+    width: 10%;
+    height: 90%;
 }
 .header_cart_icon{
-    width: 20px;
-    height: 20px;
+    display: flex;
+    width: 20%;
+
 }
 .central_logo{
     display: flex;
@@ -48,7 +49,7 @@ body{
     background-color: var(--color_pink);
 }
 .central_logo_1{
-    width: 20%;
+    width: 100px;
 }
 .central_nav_articles{
     width: 100%;
