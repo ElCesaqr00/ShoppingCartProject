@@ -14,6 +14,12 @@ body{
     padding: 0;
     background-color: var(--color_White);
 }
+.body-test{
+    width: 80%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .header_cart{
     display: flex;
     justify-content: space-between;
@@ -38,7 +44,6 @@ body{
 .header_cart_icon{
     display: flex;
     width: 20%;
-
 }
 .central_logo{
     display: flex;
@@ -49,6 +54,7 @@ body{
     background-color: var(--color_pink);
 }
 .central_logo_1{
+    display: flex;
     width: 100px;
 }
 .central_nav_articles{
@@ -73,5 +79,14 @@ body{
     margin-left: 2%;
 }
 .filter_articles{
-    height: 40%;
+    width: 10% ;
+    height: 50%;
+}
+
+@media (max-width: 400px) {
+    .header_cart_icon{
+        display: flex;
+        width: 40%;
+    }
+    
 }
