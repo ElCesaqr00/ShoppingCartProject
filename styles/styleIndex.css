@@ -5,3 +5,8 @@
     --color_black: #434343;
     --color_blue: #274671;
 }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
