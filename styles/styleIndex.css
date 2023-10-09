@@ -15,8 +15,8 @@ body{
     background-color: var(--color_White);
 }
 .body-test{
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -42,8 +42,19 @@ body{
     height: 90%;
 }
 .header_cart_icon{
-    display: flex;
-    width: 20%;
+    width: 30%;
+    cursor: pointer;
+}
+.info_card_shopping{
+    display: none;
+    top: 55px;
+    right: -35%;
+    width: 400px;
+    height: 80%;
+    background-color: var(--color_white);
+    color: black;
+    border: 5px solid rgba(0, 0, 0, 0.11);
+    position: absolute;
 }
 .central_logo{
     display: flex;
@@ -61,6 +72,57 @@ body{
 .central_nav_articles{
     width: 100%;
     height: 70%;
+}
+.singleArticle img{
+    display: flex;
+    width: 200px;
+}
+.singleArticle h2{
+    font-size: 15px;
+    float: left;
+}
+.Color1{
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+background-color: var(--color_black);
+}
+.Color2{
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+  background-color: var(--color_pink);  
+}
+.singleArticle p{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 50px;
+    font-size: x-large;
+}
+.singleArticle__colors{
+    display: flex;
+    gap: 5px;
+    width: 200px;
+
+}
+.central_items{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+.singleArticle{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 200px;
+    flex-direction: column; 
+    border-radius: 6px;
+    transition: box-shadow 0.2s ease-in-out;  
+}
+.singleArticle:hover{
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.164)   
 }
 .nav_articles{
     display: flex;
