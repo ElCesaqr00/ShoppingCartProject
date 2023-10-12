@@ -161,11 +161,17 @@ cart.addEventListener("click", (event)=>{
   if(event.target.classList.contains("plus")){
     //console.log("quiero sumar");
     const id = +event.target.closest(".cart_article").id;
+    if (db.cart[id].amount===db.cart[id].quantity) {
+      return alert("No tenemos mas existencias")
+    }
     db.cart[id].amount++;
   }
   if(event.target.classList.contains("less")){
     //console.log("quiero restar");
     const id = +event.target.closest(".cart_article").id;
+    if (db.cart[id].amount===1) {
+      return alert("Estas en la cantidad minima seleccionada")
+    }
     db.cart[id].amount--;
   }
   if(event.target.classList.contains("trash")){
