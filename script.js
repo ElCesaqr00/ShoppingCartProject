@@ -116,6 +116,9 @@ cartList.addEventListener("click", (event)=>{
     const articleId = db.products.find(element => element.id === id);
   //console.log(articleId);
     if (articleId.id in db.cart) {
+      if (db.cart[id].amount===db.cart[id].quantity) {
+        return alert("No tenemos mas existencias")
+      }
       db.cart[articleId.id].amount++;      
     } else{
       articleId.amount = 1;
@@ -177,7 +180,11 @@ cart.addEventListener("click", (event)=>{
   if(event.target.classList.contains("trash")){
     const id = +event.target.closest(".cart_article").id;
     console.log(id)
-    delete db.cart[id];
+    const SureDelete = confirm("Seguro que desea eliminarlo del carrito?");
+    if (!SureDelete) {
+      return;
+    }
+   delete db.cart[id];
   }
   printCart(db.cart)
 })

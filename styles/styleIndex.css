@@ -51,7 +51,7 @@ body{
     gap: 30px;
     top: 55px;
     right: -45%;
-    width: 415px;
+    width: 420px;
     height: 80%;
     background-color: var(--color_white);
     color: black;
@@ -63,7 +63,7 @@ body{
 .active{
     top: 55px;
     right: 1%;
-    width: 415px;
+    width: 420px;
     height: 80%;
     background-color: var(--color_white);
     color: black;
@@ -190,6 +190,16 @@ background-color: var(--color_black);
 .filter_articles{
     width: 10% ;
     height: 50%;
+    border: none;
+    color: #434343a6;
+}
+.filter_articles:hover{
+    width: 10% ;
+    height: 50%;
+    border: none;
+    background-color: var(--color_pink);
+    border-radius: 8px;
+    color: #ffffff;
 }
 .close_details{
     justify-content: flex-end;
