@@ -45,10 +45,6 @@ body{
     width: 20px;
     cursor: pointer;
 }
-.info_card{
-    display: flex;
-    
-}
 .info_card_shopping{
     display: flex;
     flex-direction: column;
@@ -73,6 +69,7 @@ body{
     color: black;
     border: 5px solid var(--color_pink);
     border-style: groove;
+
     overflow-y: scroll;
 }
 .btn_cart_shop{
